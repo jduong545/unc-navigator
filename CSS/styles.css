@@ -1,0 +1,110 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: 122E42;
+}
+
+/* header */
+header {
+    background-color: #56A0D3;
+    padding: 20px;
+}
+
+header img {
+    width: 20%;
+    display: inline;
+}
+
+header h1 {
+    display: inline;
+}
+
+
+/* footer */
+footer {
+    background-color: #56A0D3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    text-align: right;
+}
+
+footer p {
+    color: #185E8E;
+}
+
+footer img {
+    width: 50%;
+    display: flex;
+    align-self: center;
+}
+
+/* for location pages */
+.location-category { /* For example, the word "Libraries" which appears at the top of the page */
+    text-align: center;
+    background-color: #B0E2ED;
+    padding: 20px;
+}
+
+.locations-main-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr)
+}
+
+.location img {
+    float: left;
+    width: 40%;
+    padding: 50px;
+}
+
+.location div {
+    text-align: center;
+    margin-right: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.location a {
+    background-color: #56A0D3;
+    border-radius: 25px;
+    padding: 15px;
+    width: 50%;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.location a:hover, .location a:focus {
+    background-color: #185E8E;
+    text-decoration: underline;
+}
+
+/* desktop view */
+@media screen and (min-width: 768px) {
+    footer img {
+        width: 20%;
+    }
+    .locations-main-grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .location img {
+        float: none;
+        width: 80%;
+        padding: 50px;
+    }
+    .location div {
+        display: block;
+        margin: 20px;
+        height:auto;
+    }
+    .location a {
+        padding: 15px 50px 15px 50px;
+    }
+}
