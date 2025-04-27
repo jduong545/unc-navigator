@@ -1,27 +1,46 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
 body {
     font-family: Roboto;
     margin: 0;
 }
 
-h1, h2, h3 {
-    color: 122E42;
+h2, h3 {
+    color: #122E42;
 }
 
 /* header */
 header {
     background-color: #56A0D3;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header img {
-    width: 20%;
-    display: inline;
+    width: 100px;
+    padding-left: 10px;
 }
 
-header h1 {
-    display: inline;
+h1 {
+	margin: 0;
+	font-size: 2.5em;
+	color: white;
 }
 
+/* navigation */
+nav ul {
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	width: 100%;
+}
 
 /* footer */
 footer {
@@ -32,12 +51,18 @@ footer {
     text-align: right;
 }
 
+footer h2 {
+	margin-bottom: 0;
+	margin-top: 25px;
+}
+
 footer p {
     color: #185E8E;
+    margin-top: 5px;
 }
 
 footer img {
-    width: 50%;
+    width: 150px;
     display: flex;
     align-self: center;
 }
@@ -86,24 +111,69 @@ footer img {
 }
 
 /* desktop view */
-@media screen and (min-width: 768px) {
-    footer img {
-        width: 20%;
+@media screen and (min-width: 800px) {
+	/*  header  */
+    header {
+    	background-color: white;
+    	justify-content: inherit;
+    	flex-wrap: wrap;
+    	padding: 10px 0;
     }
+
+    header img {
+    	width: 145px;
+    }
+
+    h1 {
+    	color: #56A0D3;
+    }
+
+    nav {
+    	background-color: #56A0D3;
+    	width: 100%;
+    }
+
+    nav li {
+    	text-align: center;
+    }
+
+    nav a {
+    	font-size: 1.25em;
+    }
+
+    nav a:hover, nav a:focus {
+		background-color: white;
+		color: #56A0D3;
+		padding: 15px;
+	}
+
+	/*  footer  */
+	footer img {
+		margin-left: 25px;
+	}
+
+	footer div {
+		margin-right: 25px;
+	}
+
+	/* location */
     .locations-main-grid {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, 1fr)
     }
+
     .location img {
         float: none;
         width: 80%;
         padding: 50px;
     }
+
     .location div {
         display: block;
         margin: 20px;
         height:auto;
     }
+
     .location a {
         padding: 15px 50px 15px 50px;
     }
