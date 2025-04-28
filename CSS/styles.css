@@ -1,5 +1,5 @@
 *, *:before, *:after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-h2, h3 {
+p, h1, h2, h3 {
     color: #122E42;
 }
 
@@ -26,20 +26,20 @@ header img {
 }
 
 h1 {
-	margin: 0;
-	font-size: 2.5em;
-	color: white;
+    margin: 0;
+    font-size: 2.5em;
+    color: white;
 }
 
 /* navigation */
 nav ul {
-	list-style: none;
+    list-style: none;
 }
 
 nav ul li a {
-	text-decoration: none;
-	color: white;
-	width: 100%;
+    text-decoration: none;
+    color: white;
+    width: 100%;
 }
 
 /* footer */
@@ -49,11 +49,12 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     text-align: right;
+    margin-top: 25px;
 }
 
 footer h2 {
-	margin-bottom: 0;
-	margin-top: 25px;
+    margin-bottom: 0;
+    margin-top: 25px;
 }
 
 footer p {
@@ -64,6 +65,64 @@ footer p {
 footer img {
     width: 150px;
     display: flex;
+    align-self: center;
+}
+
+/* for home/feedback/map pages */
+.home {
+    display: grid;
+    grid-template-rows: 0.3fr repeat(2, 1fr) 0.5fr;
+    align-items: center;
+}
+
+.home h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.home div, .home figure {
+    margin: 5px auto;
+}
+
+.home figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.home img {
+    width: 450px;
+    border-radius: 50px;
+}
+
+.home p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.home a {
+    background-color: #56A0D3;
+    color: #122E42;
+    border: solid 10px #185E8E;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px 50px;
+    font-size: 2em;
+    transition: border ease-out 1s, background-color ease-out 1s, color ease-out 1s;
+}
+
+.home a:hover, .home a:focus {
+    background-color: #185E8E;
+    border: solid 10px #56A0D3;
+    color: white;
+}
+
+.map img {
+    width: 100%;
+    margin-top: 25px;
     align-self: center;
 }
 
@@ -113,51 +172,85 @@ footer img {
 
 /* desktop view */
 @media screen and (min-width: 800px) {
-	/*  header  */
+    html {
+        background-color: #b0E2ED;
+    }
+
+    /*  header  */
     header {
-    	background-color: white;
-    	justify-content: inherit;
-    	flex-wrap: wrap;
-    	padding: 10px 0;
+        background-color: white;
+        justify-content: inherit;
+        flex-wrap: wrap;
+        padding: 10px 0 0 0;
     }
 
     header img {
-    	width: 145px;
+        width: 145px;
     }
 
     h1 {
-    	color: #56A0D3;
+        color: #56A0D3;
     }
 
     nav {
-    	background-color: #56A0D3;
-    	width: 100%;
+        background-color: #56A0D3;
+        width: 100%;
     }
 
     nav li {
-    	text-align: center;
+        text-align: center;
     }
 
     nav a {
-    	font-size: 1.25em;
+        font-size: 1.25em;
     }
 
     nav a:hover, nav a:focus {
-		background-color: white;
-		color: #56A0D3;
-		padding: 15px;
-	}
+        background-color: white;
+        color: #56A0D3;
+        padding: 15px;
+    }
 
-	/*  footer  */
-	footer img {
-		margin-left: 25px;
-	}
+    /* for home/feedback/map pages */
+    .home {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        width: 75%;
+        padding: 50px 10px;
+        margin: 0 auto;
+        background-color: white;
+    }
 
-	footer div {
-		margin-right: 25px;
-	}
+    .home figure {
+        padding-left: 30px;
+    }
 
-	/* location */
+    .home img {
+        width: 90%;
+    }
+
+    .home figcaption {
+        margin-right: 40px;
+    }
+
+    .home p {
+        font-size: 1em;
+    }
+
+    /*  footer  */
+    footer {
+        margin: 0;
+    }
+
+    footer img {
+        margin-left: 25px;
+    }
+
+    footer div {
+        margin-right: 25px;
+    }
+
+    /* location */
     .locations-main-grid {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, 1fr)
