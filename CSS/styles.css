@@ -69,6 +69,7 @@ footer img {
 
 /* for location pages */
 .location-category { /* For example, the word "Libraries" which appears at the top of the page */
+    margin: 0;
     text-align: center;
     background-color: #B0E2ED;
     padding: 20px;

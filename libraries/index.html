@@ -1,14 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Libraries – UNC Navigator</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- RESPONSIVE NAV -->
+  <link href="../css/responsive-nav.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/responsive-nav@1.0/responsive-nav.min.js"></script>
 </head>
 
 <body>
+  <header>
+    <img src="../images/logo_darklightbg.png" alt="UNC Navigator logo">
+    <h1>UNC Navigator</h1>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Libraries</a></li>
+        <li><a href="../creative-spaces/index.html">Creative Spaces</a></li>
+        <li><a href="../coffee-shops/index.html">Coffee Shops</a></li>
+        <li><a href="../feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <h2 class="location-category">Libraries</h2>
+  
+    <div class="locations-main-grid">
+      <!-- 1. Wilson Library -->
+      <div class="location">
+        <img src="/images/wilson-library.jpg"
+         alt="Wilson Library ">
+        <div>
+          <h3>Wilson Library</h3>
+          <p>Chapel Hill, NC<br>Research collections &amp; study spaces</p>
+          <a href="wilson.html">See more</a>
+        </div>
+      </div>
+  
+      <!-- 2. Health Sciences Library -->
+      <div class="location">
+        <img src="/images/health-science.jpg"
+        alt="Health Sciences Library">
+        <div>
+          <h3>UNC Health Sciences Library</h3>
+          <p>UNC Medical Campus<br>Health sciences resources &amp; quiet study</p>
+          <a href="health-sciences.html">See more</a>
+        </div>
+      </div>
+  
+      <!-- 3. Kenan Science Library -->
+      <div class="location">
+        <img src="/images/kenan-science.jpg"
+         alt="Kenan Science Library">
+        <div>
+          <h3>Kenan Science Library</h3>
+          <p>Science &amp; Engineering Quad<br>STEM journals &amp; group study rooms</p>
+          <a href="kenan.html">See more</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <img src="../images/logo_and_title.png" alt="UNC Navigator logo">
+    <div>
+      <h2>Contact UNC</h2>
+      <p>+1 (919) 962-2211<br>
+         University of North Carolina at Chapel Hill, Chapel Hill, NC</p>
+    </div>
+  </footer>
 </body>
-
 </html>
