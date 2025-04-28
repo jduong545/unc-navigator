@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- font -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UNC Navigator</title>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!-- RESPONSIVE NAV -->
+	<link href="../CSS/responsive-nav.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/responsive-nav@1.0/responsive-nav.min.js"></script>
 </head>
 
 <body>
 
-    <h1 class="location-category">Creative Spaces</h2>
+    <header>
+		<img src="../images/logo_darklightbg.png">
+		<h1>UNC Navigator</h1>
+		<nav class="nav-collapse">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="../libraries/index.html">Libraries</a></li>
+				<li><a href="../creative-spaces/index.html">Creative&nbsp;Spaces</a></li>
+				<li><a href="../coffee-shops/index.html">Coffee&nbsp;Shops</a></li>
+				<li><a href="../feedback.html">Feedback</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <h2 class="location-category">Creative Spaces</h2>
 
     <div class="locations-main-grid">
         <div class="location">
             <img src="../images/placeholder.png">
             <div>
-                <h3>Name</h3>
+                <h3>BeAM Makerspaces</h3>
                 <p>Location Location Location Location<br>
                     Purpose Purpose Purpose Purpose Purpose Purpose Purpose Purpose</p>
                 <a href="">See more</a>
@@ -28,7 +47,7 @@
         <div class="location">
             <img src="../images/placeholder.png">
             <div>
-                <h3>Name</h3>
+                <h3>Morrison Art Studio</h3>
                 <p>Location Location Location Location<br>
                     Purpose Purpose Purpose Purpose Purpose Purpose Purpose Purpose</p>
                 <a href="">See more</a>
@@ -38,13 +57,22 @@
         <div class="location">
             <img src="../images/placeholder.png">
             <div>
-                <h3>Name</h3>
+                <h3>CURRENT ArtSpace + Studio</h3>
                 <p>Location Location Location Location<br>
                     Purpose Purpose Purpose Purpose Purpose Purpose Purpose Purpose</p>
                 <a href="">See more</a>
             </div>
         </div>
     </div>
+
+    <footer>
+        <img src="../images/logo_and_title.png" alt="UNC Navigator logo">
+        <div>
+          <h2>Contact UNC</h2>
+          <p>+1 (919) 962-2211<br>
+             University of North Carolina at Chapel Hill, Chapel Hill, NC</p>
+        </div>
+      </footer>
 
 </body>
 
