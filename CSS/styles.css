@@ -68,7 +68,7 @@ footer img {
     align-self: center;
 }
 
-/* for home/feedback/map pages */
+/* for home/map page */
 .home {
     display: grid;
     grid-template-rows: 0.3fr repeat(2, 1fr) 0.5fr;
@@ -85,7 +85,7 @@ footer img {
     margin: 5px auto;
 }
 
-.home figcaption {
+figcaption {
     font-style: italic;
     font-size: 0.75em;
     text-align: right;
@@ -124,6 +124,91 @@ footer img {
     width: 100%;
     margin-top: 25px;
     align-self: center;
+}
+
+/*  for feedback page  */
+.feedback div {
+    margin: 0 40px;
+}
+
+.feedback h2 {
+    margin-top: 30px;
+}
+
+.feedback p {
+    font-size: 0.9em;
+}
+
+.feedback form {
+    display: grid;
+    grid-template-rows: repeat(2, 0.5fr) repeat(2, 0.75fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
+}
+
+.feedback label {
+    display: inline-block;
+    min-width: 97px;
+    text-align: right;
+}
+
+.feedback input, .feedback textarea {
+    border: 1px solid #185E8E;
+    border-radius: 5px;
+    margin-left: 25px;
+    background-color: #b0E2ED;
+    opacity: 50%;
+    width: 80%;
+}
+
+.feedback input:focus, .feedback textarea:focus {
+    outline-style: solid;
+    outline-color: #122E42;
+}
+
+.feedback textarea {
+    vertical-align: top;
+    height: 10em;
+    width: 90%;
+    margin-left: 25px;
+}
+
+.feedback .email {
+    grid-area: 2 / span 2;
+    min-width: 72px;
+}
+
+.feedback .email-input {
+    width: 90%;
+}
+
+.feedback .comment {
+    grid-area: 3 / span 2;
+}
+
+.feedback .button {
+    grid-area: 4 / span 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.feedback button {
+    background-color: #56A0D3;
+    color: #122E42;
+    border: solid 5px #185E8E;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 1.25em;
+    transition: border ease-out 1s, background-color ease-out 1s, color ease-out 1s;
+    margin-right: 10px;
+}
+
+.feedback button:hover, .feedback button:focus {
+    background-color: #185E8E;
+    border: solid 5px #56A0D3;
+    color: white;
 }
 
 /* for location pages */
@@ -197,7 +282,12 @@ footer img {
         width: 100%;
     }
 
+    nav ul {
+        justify-content: space-evenly;
+    }
+
     nav li {
+        max-width: 160px;
         text-align: center;
     }
 
@@ -208,10 +298,12 @@ footer img {
     nav a:hover, nav a:focus {
         background-color: white;
         color: #56A0D3;
-        padding: 15px;
+        padding: 15px 5px;
+        border: solid 2px white;
+        border-radius: 60px;
     }
 
-    /* for home/feedback/map pages */
+    /* for home/map pages */
     .home {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr 1fr;
@@ -234,6 +326,25 @@ footer img {
     }
 
     .home p {
+        font-size: 1em;
+        margin-right: 40px;
+    }
+
+    .map figure, .map img {
+        width: 100%;
+        margin: 0;
+    }
+
+    /*  for feedback  */
+    .feedback {
+        width: 75%;
+        max-width: 1060px;
+        padding: 50px 10px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .feedback p {
         font-size: 1em;
     }
 
@@ -266,7 +377,6 @@ footer img {
         display: block;
         margin: 20px;
         height:auto;
-        text-align: center;
     }
 
     .location a {
