@@ -68,11 +68,38 @@ footer img {
     align-self: center;
 }
 
-/* for home/feedback/map pages */
+/* for home/map page */
 .home {
     display: grid;
     grid-template-rows: 0.3fr repeat(2, 1fr) 0.5fr;
     align-items: center;
+}
+
+.home h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.home div, .home figure {
+    margin: 5px auto;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    text-align: right;
+}
+
+.home img {
+    width: 300px;
+    border-radius: 50px;
+}
+
+.home p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1em;
 }
 
 .home a {
@@ -93,35 +120,10 @@ footer img {
     color: white;
 }
 
-.home h2 {
-    font-size: 3em;
-    text-align: center;
-    padding-top: 15px;
-}
-
-.home div, .home figure {
-    margin: 5px auto;
-}
-
-.home figcaption {
-    font-style: italic;
-    font-size: 0.75em;
-    text-align: right;
-}
-
-.home img {
-    width: 450px;
-    border-radius: 50px;
-}
-
-.home p {
-    font-size: 1em;
-    margin-right: 40px;
-}
-
-.map figure, .map img {
+.map img {
     width: 100%;
-    margin: 0;
+    margin-top: 25px;
+    align-self: center;
 }
 
 /*  for feedback  */
@@ -334,7 +336,7 @@ footer img {
         padding: 15px;
     }
 
-    /* for home/feedback/map pages */
+    /* for home/map pages */
     .home {
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 1fr 1fr;
@@ -358,6 +360,12 @@ footer img {
 
     .home p {
         font-size: 1em;
+        margin-right: 40px;
+    }
+
+    .map figure, .map img {
+        width: 100%;
+        margin: 0;
     }
 
     /*  footer  */
@@ -374,7 +382,6 @@ footer img {
     }
 
     /* location */
-
     .location {
         padding-bottom: 40px;
     }
