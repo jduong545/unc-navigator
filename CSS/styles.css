@@ -219,6 +219,10 @@ figcaption {
     padding: 20px;
 }
 
+.location {
+    background-color: white;
+}
+
 .locations-main-grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr)
@@ -362,6 +366,11 @@ figcaption {
     }
 
     /* location */
+
+    .location {
+        padding-bottom: 40px;
+    }
+
     .locations-main-grid {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, 1fr)
@@ -369,14 +378,19 @@ figcaption {
 
     .location img {
         float: none;
-        width: 80%;
-        padding: 50px;
+        height: 500px;
+        width: 100%;
+        object-fit:cover
     }
 
     .location div {
         display: block;
         margin: 20px;
         height:auto;
+    }
+
+    .location p {
+        margin-bottom: 40px;
     }
 
     .location a {
