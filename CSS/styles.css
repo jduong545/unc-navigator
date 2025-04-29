@@ -266,9 +266,70 @@ footer img {
         display: block;
         margin: 20px;
         height:auto;
+        text-align: center;
     }
 
     .location a {
         padding: 15px 50px 15px 50px;
     }
+
+/* === Desktop: side-by-side for library pages === */
+@media screen and (min-width: 800px) {
+    .library-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+  
+    .library-image {
+      flex: 1 1 300px;
+    }
+  
+    .library-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  
+    .library-info {
+      flex: 2 1 400px;
+      text-align: left;
+    }
+  
+    .library-map {
+      margin: 20px 0;
+    }
+  
+    .library-map img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #56A0D3;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .back-button:hover {
+      background-color: #185E8E;
+    }
+  }
+  
+  /* === Mobile: stack the two columns vertically === */
+  @media screen and (max-width: 799px) {
+    .library-details {
+      display: flex;        /* ensure it’s still a flex container */
+      flex-direction: column;
+      gap: 24px;
+      margin: 24px 20px;    /* adjust your margins as you like */
+    }
+  }
+  
+  
 }

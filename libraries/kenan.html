@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kenan Science Library – UNC Navigator</title>
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="../css/responsive-nav.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/responsive-nav@1.0/responsive-nav.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="../images/logo_darklightbg.png" alt="UNC Navigator logo">
+    <h1>UNC Navigator</h1>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Libraries</a></li>
+        <li><a href="../creative-spaces/index.html">Creative Spaces</a></li>
+        <li><a href="../coffee-shops/index.html">Coffee Shops</a></li>
+        <li><a href="../feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="location-category">Kenan Science Library</h2>
+
+    <div class="locations-main-grid">
+      <div class="location">
+        <img src="../images/kenan-science.jpg" alt="Kenan Science Library exterior">
+        <div>
+          <h3>Kenan Science Library</h3>
+          <p><strong>Location:</strong> Science &amp; Engineering Quad</p>
+          <p><strong>Hours:</strong><br>
+            Mon–Thu: 8 am–10 pm<br>
+            Fri: 8 am–5 pm<br>
+            Sat: Closed<br>
+            Sun: 2 pm–10 pm
+          </p>
+          <p><strong>Special Aspects:</strong><br>
+            STEM journals, Tech lending, 24-hour study lab
+          </p>
+          <a href="index.html">&larr; Back to Libraries</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="../images/logo_and_title.png" alt="UNC Navigator logo">
+    <div>
+      <h2>Contact UNC</h2>
+      <p>+1 (919) 962-2211<br>
+         University of North Carolina at Chapel Hill, Chapel Hill, NC
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    var nav = responsiveNav(".nav-collapse", { label: "☰", insert: "after" });
+  </script>
+</body>
+</html>
