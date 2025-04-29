@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>UNC Health Sciences Library – UNC Navigator</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/styles.css">
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- RESPONSIVE NAV -->
   <link href="../css/responsive-nav.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/responsive-nav@1.0/responsive-nav.min.js"></script>
 </head>
@@ -31,21 +34,47 @@
   <main>
     <h2 class="location-category">UNC Health Sciences Library</h2>
 
-    <div class="locations-main-grid">
-      <div class="location">
-        <img src="../images/health-science.jpg" alt="UNC Health Sciences Library">
-        <div>
-          <h3>Health Sciences Library</h3>
-          <p><strong>Location:</strong> UNC Medical Campus</p>
-          <p><strong>Hours:</strong><br>
-            Mon–Fri: 8 am–5 pm<br>
-            Sat–Sun: Closed
-          </p>
-          <p><strong>Special Aspects:</strong><br>
-            Medical databases, Professional librarians, Carrel study rooms
-          </p>
-          <a href="index.html">&larr; Back to Libraries</a>
-        </div>
+    <div class="library-details">
+      <div class="library-image">
+        <img src="../images/health-science-map.png" alt="Health Sciences Library exterior">
+      </div>
+      <div class="library-info">
+        <h3>Address</h3>
+        <p>
+          182 MacNider Drive<br>
+          Chapel Hill, NC 27599
+        </p>
+
+        <h3>Hours</h3>
+        <p>
+          Mon–Fri: 8 am–5 pm<br>
+          Sat–Sun: Closed
+        </p>
+
+        <h3>Services</h3>
+        <ul class="services-list">
+          <li>Medical &amp; clinical databases</li>
+          <li>Professional librarian assistance</li>
+          <li>Carrel &amp; group study rooms</li>
+          <li>Interlibrary loan requests</li>
+          <li>Wi-Fi &amp; printing</li>
+        </ul>
+
+        <h3>Website</h3>
+        <p>
+          <a href="https://library.unc.edu/health-sciences" target="_blank">
+            library.unc.edu/health-sciences
+          </a>
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Email: <a href="mailto:hslib@unc.edu">hslib@unc.edu</a><br>
+          Phone: +1 (919) 966-1186
+        </p>
+
+
+        <a href="index.html" class="back-button">&larr; Back to Libraries</a>
       </div>
     </div>
   </main>
@@ -54,14 +83,18 @@
     <img src="../images/logo_and_title.png" alt="UNC Navigator logo">
     <div>
       <h2>Contact UNC</h2>
-      <p>+1 (919) 962-2211<br>
-         University of North Carolina at Chapel Hill, Chapel Hill, NC
+      <p>
+        +1 (919) 962-2211<br>
+        University of North Carolina at Chapel Hill, Chapel Hill, NC
       </p>
     </div>
   </footer>
 
   <script>
-    var nav = responsiveNav(".nav-collapse", { label: "☰", insert: "after" });
+    var nav = responsiveNav(".nav-collapse", {
+      label: "☰",
+      insert: "after"
+    });
   </script>
 </body>
 </html>
