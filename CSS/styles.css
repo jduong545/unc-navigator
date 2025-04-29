@@ -145,8 +145,11 @@ footer img {
 
 .location img {
     float: left;
-    width: 40%;
-    padding: 50px;
+    width: 50%;
+    height: 300px;
+    margin: 10px 0px 10px 0px;
+    padding:10px 20px 10px 0px;
+    object-fit:cover;
 }
 
 .location div {
@@ -162,7 +165,7 @@ footer img {
 .location a {
     background-color: #56A0D3;
     border-radius: 25px;
-    padding: 15px;
+    padding: 10px;
     width: 50%;
     color: #FFFFFF;
     font-weight: bold;
@@ -172,6 +175,39 @@ footer img {
 .location a:hover, .location a:focus {
     background-color: #185E8E;
     text-decoration: underline;
+}
+
+.creative {
+    background-color: white;
+}
+
+.creative img {
+    width: 100%;
+}
+
+.creative div {
+    padding: 20px;
+}
+
+.creative-name {
+    background-color:#185E8E;
+    color: white;
+    width:100%;
+    text-align: center;
+    padding:20px;
+}
+
+.creative div div {
+    padding: 0px;
+    margin: 0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.creative p {
+    margin: 0;
 }
 
 /* desktop view */
@@ -269,7 +305,8 @@ footer img {
         float: none;
         height: 500px;
         width: 100%;
-        object-fit:cover
+        object-fit:cover;
+        padding: 20px;
     }
 
     .location div {
@@ -285,6 +322,30 @@ footer img {
 
     .location a {
         padding: 15px 50px 15px 50px;
+    }
+
+    .creative {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align:center;
+    }
+
+    .creative img {
+        height: 100%;
+        object-fit:cover;
+    }
+
+    .creative-makerspace-grid {
+        display:grid;
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .creative-name {
+        width:90%;
+    }
+
+    .creative-contact {
+        background-color: white;
     }
 
 /* === Desktop: side-by-side for library pages === */
