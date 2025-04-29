@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kenan Science Library – UNC Navigator</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- RESPONSIVE NAV -->
+  <link href="../css/responsive-nav.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/responsive-nav@1.0/responsive-nav.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="../images/logo_darklightbg.png" alt="UNC Navigator logo">
+    <h1>UNC Navigator</h1>
+    <nav class="nav-collapse">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Libraries</a></li>
+        <li><a href="../creative-spaces/index.html">Creative Spaces</a></li>
+        <li><a href="../coffee-shops/index.html">Coffee Shops</a></li>
+        <li><a href="../feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="location-category">Kenan Science Library</h2>
+
+    <div class="library-details">
+      <div class="library-image">
+        <img src="../images/kenan-map.png" alt="Kenan Science Library">
+      </div>
+      <div class="library-info">
+        <h3>Address</h3>
+        <p>
+          180 Bynum Hall Drive<br>
+          Chapel Hill, NC 27514
+        </p>
+
+        <h3>Hours</h3>
+        <p>
+          Mon–Thu: 8 am–10 pm<br>
+          Fri: 8 am–5 pm<br>
+          Sat: Closed<br>
+          Sun: 2 pm–10 pm
+        </p>
+
+        <h3>Services</h3>
+        <ul class="services-list">
+          <li>STEM &amp; engineering collections</li>
+          <li>3D printing &amp; maker space</li>
+          <li>Equipment lending (laptops, cameras)</li>
+          <li>Group study &amp; collaboration rooms</li>
+          <li>Wi-Fi &amp; quiet floors</li>
+        </ul>
+
+        <h3>Website</h3>
+        <p>
+          <a href="https://library.unc.edu/kenan" target="_blank">
+            library.unc.edu/kenan
+          </a>
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Email: <a href="mailto:kenanlib@unc.edu">kenanlib@unc.edu</a><br>
+          Phone: +1 (919) 962-5294
+        </p>
+
+
+        <a href="index.html" class="back-button">&larr; Back to Libraries</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <img src="../images/logo_and_title.png" alt="UNC Navigator logo">
+    <div>
+      <h2>Contact UNC</h2>
+      <p>
+        +1 (919) 962-2211<br>
+        University of North Carolina at Chapel Hill, Chapel Hill, NC
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    var nav = responsiveNav(".nav-collapse", {
+      label: "☰",
+      insert: "after"
+    });
+  </script>
+</body>
+</html>
