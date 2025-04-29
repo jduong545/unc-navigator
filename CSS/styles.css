@@ -134,6 +134,10 @@ footer img {
     padding: 20px;
 }
 
+.location {
+    background-color: white;
+}
+
 .locations-main-grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr)
@@ -251,6 +255,11 @@ footer img {
     }
 
     /* location */
+
+    .location {
+        padding-bottom: 40px;
+    }
+
     .locations-main-grid {
         grid-template-rows: 1fr;
         grid-template-columns: repeat(3, 1fr)
@@ -258,8 +267,9 @@ footer img {
 
     .location img {
         float: none;
-        width: 80%;
-        padding: 50px;
+        height: 500px;
+        width: 100%;
+        object-fit:cover
     }
 
     .location div {
@@ -267,6 +277,10 @@ footer img {
         margin: 20px;
         height:auto;
         text-align: center;
+    }
+
+    .location p {
+        margin-bottom: 40px;
     }
 
     .location a {
